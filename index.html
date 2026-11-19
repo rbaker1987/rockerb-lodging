@@ -3,68 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rocker B Memorial Day Tournament – Lodging &amp; Cost Guide</title>
-<meta name="description" content="Lodging options and per-family cost estimates for our 12U team's Memorial Day tournament at Rocker B Ranch, Graford, TX.">
+<title>Alphas · Rocker B Lodging &amp; Cost Guide</title>
+<meta name="description" content="Lodging options and per-family cost estimates for the Lindale Alphas 12U Memorial Day tournament at Rocker B Ranch, Graford, TX.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Graduate&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #faf8f4; --card: #ffffff; --ink: #1f2328; --muted: #5b6370;
-    --line: #e4dfd6; --accent: #8a3b12; --accent-soft: #f6ebe3;
-    --good: #2f6b3a; --good-soft: #e7f2e8; --warn: #8a5a00; --warn-soft: #fbf1dc;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #16181b; --card: #1f2226; --ink: #ecebe8; --muted: #a3a9b2;
-      --line: #33373d; --accent: #e3925f; --accent-soft: #2c231d;
-      --good: #8fd19b; --good-soft: #1d2a20; --warn: #e7c06a; --warn-soft: #2b2518;
-    }
+    --bg: #000;
+    --panel: #0e0e0e;
+    --line: #262626;
+    --line-strong: #3a3a3a;
+    --text: #fff;
+    --muted: #9a9a9a;
+    --faint: #8a8a8a;
+    --turf: #7fd18b;
+    --warn: #f2c14e;
   }
   * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--ink);
-    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-  header {
-    background: var(--accent); color: #fff; padding: 36px 20px 28px;
-  }
-  @media (prefers-color-scheme: dark) { header { background: #5a2a10; } }
-  .wrap { max-width: 920px; margin: 0 auto; }
-  header h1 { margin: 0 0 6px; font-size: clamp(1.5rem, 4vw, 2.1rem); line-height: 1.2; }
-  header p { margin: 0; opacity: .9; }
-  main { padding: 8px 20px 48px; }
-  section {
-    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
-    padding: 20px 22px; margin: 20px 0;
-  }
-  h2 { margin: 0 0 10px; font-size: 1.25rem; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); }
+  body { font: 15px/1.55 Montserrat, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-underline-offset: 3px; }
+
+  /* ---------- header ---------- */
+  header { padding: 28px 16px 8px; text-align: center; }
+  .plate { width: min(340px, 82vw); height: auto; display: block; margin: 0 auto; }
+  .plate text { fill: var(--text); }
+  .subtitle { margin-top: 10px; font-weight: 600; letter-spacing: .32em; font-size: 12px; color: var(--muted); text-transform: uppercase; }
+  h1 { font: 400 clamp(1.25rem, 3.6vw, 1.7rem)/1.25 Graduate, serif; letter-spacing: .06em; margin: 18px 0 6px; }
+  .updated { font-size: 12px; color: var(--faint); letter-spacing: .14em; text-transform: uppercase; font-weight: 600; }
+
+  /* ---------- layout ---------- */
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px 48px; }
+  section { border-top: 1px solid var(--line); padding: 24px 0 8px; }
+  h2 { font: 400 18px Graduate, serif; letter-spacing: .06em; margin: 0 0 10px; }
   p { margin: 0 0 12px; }
-  .lead { font-size: 1.05rem; }
-  .muted { color: var(--muted); font-size: .9rem; }
+  .lead { font-size: 1.02rem; }
+  .muted { color: var(--muted); font-size: 13px; }
+  strong { font-weight: 700; }
+
+  /* ---------- tables ---------- */
   .table-wrap { overflow-x: auto; margin: 6px 0 12px; }
-  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
-  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
-  th { background: var(--accent-soft); font-weight: 600; white-space: nowrap; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 10px; border-top: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); white-space: nowrap; border-top: 0; border-bottom: 1px solid var(--line-strong); }
   td.num, th.num { text-align: right; white-space: nowrap; }
-  tr.best td { background: var(--good-soft); }
-  .pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: .8rem; font-weight: 600; }
-  .pill.pending { background: var(--warn-soft); color: var(--warn); }
-  .pill.done { background: var(--good-soft); color: var(--good); }
-  .callout { background: var(--warn-soft); border-left: 4px solid var(--warn); padding: 10px 14px; border-radius: 6px; margin: 10px 0; }
-  .options { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin-top: 8px; }
-  .option { border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
-  .option h3 { margin: 0 0 4px; font-size: 1rem; }
-  .option .price { font-size: 1.3rem; font-weight: 700; color: var(--accent); }
+  tbody tr:hover { background: #0b0b0b; }
+  tr.best td { color: var(--turf); font-weight: 600; }
+  .pill { font: 700 10.5px Montserrat, sans-serif; letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--line-strong); border-radius: 4px; padding: 2px 7px; white-space: nowrap; margin-right: 4px; }
+  .pill.pending { color: var(--warn); border-color: var(--warn); }
+  .pill.done { color: var(--turf); border-color: var(--turf); }
+
+  /* ---------- option cards ---------- */
+  .options { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin-top: 12px; }
+  .option { background: var(--panel); border: 1px solid var(--line-strong); border-radius: 8px; padding: 14px 16px; }
+  .option h3 { margin: 0 0 6px; font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .option .price { font: 400 22px Graduate, serif; display: block; margin-bottom: 4px; }
+  .option.best { border-color: var(--turf); }
+  .option.best .price { color: var(--turf); }
+  .callout { border: 1px solid var(--warn); border-radius: 6px; padding: 10px 14px; margin: 10px 0; color: var(--text); }
+  .callout strong { color: var(--warn); }
   ul { margin: 0 0 12px; padding-left: 20px; }
-  li { margin: 4px 0; }
-  a { color: var(--accent); }
-  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 0 20px 32px; }
+  li { margin: 5px 0; }
+  footer { max-width: 920px; margin: 24px auto 0; padding: 16px 16px 40px; border-top: 1px solid var(--line); font-size: 12px; color: var(--faint); }
+
+  @media (max-width: 640px) {
+    header { padding: 14px 16px 4px; }
+    .plate { width: 150px; }
+    .subtitle { margin-top: 6px; font-size: 10.5px; }
+    table { font-size: 13px; }
+  }
 </style>
 </head>
 <body>
 <header>
-  <div class="wrap">
-    <h1>Rocker B Memorial Day Tournament – Lodging &amp; Cost Guide</h1>
-    <p>12U team · Rocker B Ranch, Graford, TX · Last updated <span id="updated"></span></p>
-  </div>
+  <svg class="plate" viewBox="0 0 400 300" role="img" aria-label="Lindale Alphas Baseball">
+    <path d="M70 46 V20 H330 V46 M70 150 V176 L200 286 L330 176 V150" fill="none" stroke="#fff" stroke-width="9" stroke-linejoin="miter"/>
+    <text x="200" y="66" text-anchor="middle" font-family="Montserrat" font-weight="700" font-size="17" letter-spacing="8">LINDALE</text>
+    <text x="200" y="128" text-anchor="middle" font-family="Graduate" font-size="66" letter-spacing="6">ALPHAS</text>
+    <text x="200" y="166" text-anchor="middle" font-family="Montserrat" font-weight="700" font-size="17" letter-spacing="8">BASEBALL</text>
+  </svg>
+  <div class="subtitle">Rocker B Lodging Guide</div>
+  <h1>Memorial Day Tournament – Lodging &amp; Cost Guide</h1>
+  <div class="updated">Rocker B Ranch, Graford, TX · Last updated <span id="updated"></span></div>
 </header>
 
 <main class="wrap">
@@ -73,7 +94,7 @@
   <h2>Bottom line</h2>
   <p class="lead">Staying in a Mineral Wells hotel saves about <strong>$400–600 per family per weekend</strong> compared with Rocker B's onsite rooms. A shared lake house only beats a hotel on price when four families split one 5–6 bedroom house. Its real advantages are the 10-minute drive, a kitchen and team time.</p>
   <div class="options">
-    <div class="option">
+    <div class="option best">
       <h3>Mineral Wells hotel</h3>
       <div class="price">~$158–180/night</div>
       <p class="muted">Cheapest. Each family books its own room. About 17 miles from the ranch.</p>
@@ -160,7 +181,7 @@
 </section>
 
 </main>
-<footer>Estimates for planning only. Check current prices and policies before booking.</footer>
+<footer>Lindale Alphas 12U · Estimates for planning only. Check current prices and policies before booking.</footer>
 
 <script>
 /* ===== UPDATE THE NUMBERS HERE =====
